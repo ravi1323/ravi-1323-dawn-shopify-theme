@@ -1,0 +1,50 @@
+{% style %}
+  .profile {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  .profile-picture {
+    size:cover;
+    border-radius:50%;
+  }
+
+{% endstyle %}
+<div>
+  <div class="profile">
+    <img src="{{ section.settings.user_img | img_url: '300x300' }}" class="profile-picture" />
+    <h3>{{ section.settings.user_name }}</h3>
+    <p>{{ settings.announcement_bar_text }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Profile",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Profile header",
+      "default": "Profile Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "user_img",
+      "label": "Profile image"
+    },
+    {
+      "type": "richtext",
+      "id": "user_name",
+      "label": "Profile name"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Profile",
+      "name": "User Profile"
+    }
+  ]
+}
+{% endschema %}

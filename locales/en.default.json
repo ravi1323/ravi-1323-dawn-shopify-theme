@@ -40,7 +40,7 @@
     },
     "cart": {
       "view": "View my cart ({{ count }})",
-      "item_added": "Item added to your cart"
+      "item_added": "Item added to your cart Now"
     },
     "share": {
       "close": "Close share",

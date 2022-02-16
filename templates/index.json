@@ -133,7 +133,8 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/YouTube-Thumbnails-800x450.jpg",
+        "video_url": "https:\/\/youtu.be\/xJf1gajVEnc?list=RDMMxJf1gajVEnc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -219,7 +220,7 @@
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
           }
         }
@@ -230,7 +231,7 @@
         "16449207070f250e48-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52

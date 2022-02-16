@@ -1,0 +1,72 @@
+{% style %}
+.brand_detail {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.brand_box {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items:center;
+}
+
+{% endstyle %}
+{%- for block in section.blocks -%}
+
+    <div class="brand_detail">
+        {%- case block.type -%}
+
+            {%- when 'brand_detail' -%}
+            <div class="brand_box">
+                <img src="{{ block.settings.brand_image | img_url: '200x200' }}" />
+                <span>{{ block.settings.brand_name | escape }}</span>
+                <p>{{ routes.cart_url | escape }}</p>
+            </div>
+
+        {%- endcase -%}
+    </div>
+
+{%- endfor -%}
+
+{% schema %}
+
+{
+    "name": "Brand Slider",
+    "tag": "section",
+    "settings": [
+    ],
+    "blocks": [
+        {
+            "type": "brand_detail",
+            "name": "Brand Detail",
+            "limit": 5,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "brand_name",
+                    "label": "Brand name"
+                },
+                {
+                    "type": "image_picker",
+                    "id":"brand_image",
+                    "label": "Brand image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name":"Brand Details",
+            "blocks": [
+                {
+                    "type":"brand_detail"
+                }
+            ]
+        }
+    ]
+}
+
+
+{% endschema %} 

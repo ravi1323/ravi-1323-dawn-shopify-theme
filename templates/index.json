@@ -82,8 +82,8 @@
         "collection": "all",
         "products_to_show": 8,
         "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -98,20 +98,20 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "product": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "inspiron-15-laptop",
             "second_image": false
           }
         },
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "second-page"
           }
         }
       },
@@ -200,42 +200,29 @@
         "user_name": "<p><strong>John Deo<\/strong><\/p>"
       }
     },
-    "1644920707c2793f55": {
-      "type": "rich-text",
+    "16449894759f139623": {
+      "type": "custom",
       "blocks": {
-        "16449207070f250e48-0": {
-          "type": "heading",
+        "16449894752063e1ea-0": {
+          "type": "brand_detail",
           "settings": {
-            "heading": "Discussion about your brand",
-            "heading_size": "h1"
+            "brand_name": "Dell",
+            "brand_image": "shopify:\/\/shop_images\/Dell_logo_2016.svg_8999baad-d594-4e4f-93ca-dd83875e407f.png"
           }
         },
-        "16449207070f250e48-1": {
-          "type": "text",
+        "9e7eb7bc-3753-43f9-bfd1-db6c3b018a9f": {
+          "type": "brand_detail",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "16449207070f250e48-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false
+            "brand_name": "Samsung",
+            "brand_image": "shopify:\/\/shop_images\/1562575696.jpg"
           }
         }
       },
       "block_order": [
-        "16449207070f250e48-0",
-        "16449207070f250e48-1",
-        "16449207070f250e48-2"
+        "16449894752063e1ea-0",
+        "9e7eb7bc-3753-43f9-bfd1-db6c3b018a9f"
       ],
-      "settings": {
-        "color_scheme": "background-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
+      "settings": {}
     }
   },
   "order": [
@@ -246,6 +233,6 @@
     "video",
     "multicolumn",
     "1644642061b2f2e0d7",
-    "1644920707c2793f55"
+    "16449894759f139623"
   ]
 }

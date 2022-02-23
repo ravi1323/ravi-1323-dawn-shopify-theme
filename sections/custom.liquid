@@ -22,7 +22,7 @@
             <div class="brand_box">
                 <img src="{{ block.settings.brand_image | img_url: '200x200' }}" />
                 <span>{{ block.settings.brand_name | escape }}</span>
-                <p>{{ routes.cart_url | escape }}</p>
+                <p>{{ routes.product_recommendations_url  | escape }}</p>
             </div>
 
         {%- endcase -%}
